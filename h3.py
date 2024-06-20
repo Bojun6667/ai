@@ -1,28 +1,27 @@
 #參考chatgpt-4 turbo128k
 
-import pulp
+from scipy.optimize import linprog
 
-# 实例化问题，这里以最大化问题为例
-problem = pulp.LpProblem("My_LP_Problem", pulp.LpMaximize)
+# 目标函数的系数（注意我们用负数来表示最大化问题）
+c = [-3, -2, -5]
 
-# 定义决策变量
-x = pulp.LpVariable("x", lowBound=0) # x 的下界是 0
-y = pulp.LpVariable("y", lowBound=0) # y 的下界是 0
+# 不等式约束矩阵左侧
+A = [[1, 1, 0], [2, 0, 1], [0, 1, 2]]
 
-# 添加目标函数
-problem += 3*x + 4*y, "Z"
+# 不等式约束矩阵右侧
+b = [10, 9, 11]
 
-# 添加约束条件
-problem += 2*x + y <= 20, "C1"
-problem += x + 2*y <= 30, "C2"
-problem += x >= 0, "C3"
-problem += y >= 0, "C4"
+# 变量界限，x,y,z都需要大于等于0
+x_bounds = (0, None)
+y_bounds = (0, None)
+z_bounds = (0, None)
 
-# 解决问题
-problem.solve()
+# 解决线性规划问题
+result = linprog(c, A_ub=A, b_ub=b, bounds=[x_bounds, y_bounds, z_bounds], method='highs')
 
-# 打印最优解
-print("Status:", pulp.LpStatus[problem.status])
-print("x = ", pulp.value(x))
-print("y = ", pulp.value(y))
-print("最优目标函数值 = ", pulp.value(problem.objective))
+if result.success:
+    # 注意,由于我们最小化了目标函数的负数，因此这里取-fun的负数来获得最大化的结果
+    print(f'最优解: x={result.x[0]}, y={result.x[1]}, z={result.x[2]}')
+    print(f'目标函数最大值: {-result.fun}')
+else:
+    print('线性规划问题无解')
