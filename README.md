@@ -9,7 +9,7 @@
 學校科系 | [金門大學資訊工程系](https://www.nqu.edu.tw/educsie/index.php)
 課程教材 | https://github.com/ccc112b/py2cs
 
-**作業是使用了我架設的機器人，來協助完成的，並非原創 **
+**作業是使用了我架設的機器人，來協助完成的，並非原創**
 
 **[Coze Bot](https://www.coze.com/home)**
 
