@@ -1,4 +1,4 @@
-#Coze Bot
+#  Coze Bot
 
 [Mycozebot Discord link](https://discord.com/api/oauth2/authorize?client_id=1211858270327672882&permissions=8797166831616&scope=bot)
 
@@ -14,6 +14,8 @@ Coze Bot 的設計目標是為了提高使用者的效率並滿足其娛樂需�
 
 ![image](https://github.com/Bojun6667/ai/assets/99935026/697c04e5-bf28-4524-ba50-fc8cf04a4eb3)
 ![image](https://github.com/Bojun6667/ai/assets/99935026/3e27117f-a15c-4010-805e-5bd6650c17e2)
+
+---
 
 這學期我有去參加[華碩校園 AI 繪圖競賽](https://press.asus.com/tw/news/press-releases/asus-campus-ai-drawing-competition-2024/)，主要是使用`stable diffusion fooocus`的工具生圖
 
