@@ -11,6 +11,7 @@ Coze Bot 的設計目標是為了提高使用者的效率並滿足其娛樂需�
 ![image](https://github.com/Bojun6667/ai/assets/99935026/38b34a46-12d9-475d-ad15-dc7c6fa38bf5)
 
 這是我建立的知識庫
+
 ![image](https://github.com/Bojun6667/ai/assets/99935026/697c04e5-bf28-4524-ba50-fc8cf04a4eb3)
 ![image](https://github.com/Bojun6667/ai/assets/99935026/3e27117f-a15c-4010-805e-5bd6650c17e2)
 
