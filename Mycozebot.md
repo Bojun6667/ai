@@ -22,4 +22,4 @@ Coze Bot 的設計目標是為了提高使用者的效率並滿足其娛樂需�
 ##  stable diffusion fooocus
 [stable diffusion fooocus源專案](https://github.com/lllyasviel/Fooocus)
 
-這邊放上我生的圖，與提示詞
+這邊放上我生的作品，與提示詞
